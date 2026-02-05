@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>Privacy Policy & GDPR - Simon Zhang</title>
+    <style>
+        .privacy-page {
+            min-height: 100vh;
+            padding-top: calc(var(--header-height) + 4rem);
+            padding-bottom: 4rem;
+        }
+        
+        .privacy-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 var(--mb-2);
+        }
+        
+        .privacy-header {
+            text-align: center;
+            margin-bottom: var(--mb-6);
+        }
+        
+        .privacy-header h1 {
+            font-size: 2.5rem;
+            color: var(--cyber-cyan);
+            font-family: var(--title-font);
+            margin-bottom: var(--mb-2);
+            letter-spacing: 2px;
+        }
+        
+        .privacy-header p {
+            color: var(--text-color-light);
+            font-size: 1rem;
+        }
+        
+        .privacy-section {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 2px solid var(--cyber-green);
+            padding: 2.5rem;
+            margin-bottom: var(--mb-4);
+            transition: var(--transition);
+        }
+        
+        .privacy-section:hover {
+            border-color: var(--cyber-cyan);
+            box-shadow: 0 0 20px rgba(74, 144, 226, 0.3);
+        }
+        
+        .privacy-section h2 {
+            color: var(--cyber-cyan);
+            font-size: 1.5rem;
+            margin-bottom: var(--mb-3);
+            font-family: var(--title-font);
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .privacy-section h2::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: var(--cyber-green);
+        }
+        
+        .privacy-section h3 {
+            color: var(--first-color);
+            font-size: 1.2rem;
+            margin: var(--mb-3) 0 var(--mb-2) 0;
+        }
+        
+        .privacy-section p {
+            color: var(--text-color);
+            line-height: 1.8;
+            margin-bottom: var(--mb-2);
+        }
+        
+        .privacy-section ul {
+            list-style: none;
+            padding-left: 0;
+            margin: var(--mb-2) 0;
+        }
+        
+        .privacy-section ul li {
+            color: var(--text-color);
+            line-height: 1.8;
+            padding-left: 2rem;
+            position: relative;
+            margin-bottom: var(--mb-1);
+        }
+        
+        .privacy-section ul li::before {
+            content: '▹';
+            color: var(--cyber-green);
+            position: absolute;
+            left: 0;
+            font-size: 1.5rem;
+        }
+        
+        .privacy-section strong {
+            color: var(--cyber-cyan);
+        }
+        
+        .privacy-section a {
+            color: var(--cyber-green);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: var(--transition);
+        }
+        
+        .privacy-section a:hover {
+            color: var(--cyber-cyan);
+            border-bottom-color: var(--cyber-cyan);
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--cyber-green);
+            color: var(--title-color);
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            margin-bottom: var(--mb-4);
+        }
+        
+        .back-button:hover {
+            background: var(--cyber-cyan);
+            transform: translateX(-5px);
+        }
+        
+        .privacy-date {
+            text-align: center;
+            color: var(--text-color-light);
+            font-style: italic;
+            margin-top: var(--mb-4);
+            padding-top: var(--mb-4);
+            border-top: 1px solid rgba(74, 144, 226, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="l-header" id="header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="index_en.html" class="nav__logo">SZ<span class="nav__logo-highlight">.</span></a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index_en.html#a-propos" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="index_en.html#parcours" class="nav__link">Journey</a></li>
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="index_en.html#competences-transversales" class="nav__link">
+                            Skills <i class="bx bx-chevron-down"></i>
+                        </a>
+                        <ul class="nav__dropdown">
+                            <li><a href="index_en.html#competences-transversales" class="nav__dropdown-link">Project Management</a></li>
+                            <li><a href="index_en.html#communication" class="nav__dropdown-link">Professional Skills</a></li>
+                            <li><a href="index_en.html#competences-techniques" class="nav__dropdown-link">Technical Skills</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="index_en.html#projets" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="index_en.html#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-menu"></i>
+            </div>
+            
+            <a href="politique-confidentialite.html" class="nav__lang-toggle" aria-label="Passer au français">
+                <i class="bx bx-globe"></i>
+                <span>FR</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="privacy-page">
+        <div class="privacy-container">
+            <a href="index_en.html" class="back-button">
+                <i class="bx bx-arrow-back"></i>
+                Back to portfolio
+            </a>
+
+            <div class="privacy-header">
+                <h1>Privacy Policy & GDPR</h1>
+                <p>Protection of your personal data</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>1. Data Controller</h2>
+                <p>
+                    <strong>Simon Zhang</strong><br>
+                    Email: contact@simonzhang.fr<br>
+                    This site is a personal portfolio hosted for professional presentation purposes.
+                </p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>2. Data Collected</h2>
+                <p>When you use the contact form, we collect:</p>
+                <ul>
+                    <li>Your name</li>
+                    <li>Your email address</li>
+                    <li>The content of your message</li>
+                </ul>
+                <p><strong>Legal basis:</strong> Explicit consent via the form checkbox.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>3. Purpose of Processing</h2>
+                <p>The collected data is used solely for:</p>
+                <ul>
+                    <li>Responding to your contact requests</li>
+                    <li>Exchanging regarding professional opportunities (internships, jobs)</li>
+                </ul>
+                <p>No data is used for commercial or advertising purposes or shared with third parties.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>4. Cookies</h2>
+                <p>
+                    This site uses <strong>no tracking, analytics, or advertising cookies</strong>.
+                </p>
+                <p>
+                    A technical cookie may be used to remember your consent to this privacy policy. 
+                    This cookie contains no personal data and enables no tracking.
+                </p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>5. Data Retention</h2>
+                <p>
+                    Contact form data is retained for a <strong>maximum of 12 months</strong>, 
+                    then automatically deleted.
+                </p>
+                <p>
+                    If you wish for earlier deletion, you can exercise your right to erasure by contacting me.
+                </p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>6. Your GDPR Rights</h2>
+                <p>In accordance with the General Data Protection Regulation (GDPR), you have the following rights:</p>
+                <ul>
+                    <li><strong>Right of access:</strong> obtain a copy of your personal data</li>
+                    <li><strong>Right of rectification:</strong> correct inaccurate or incomplete data</li>
+                    <li><strong>Right to erasure:</strong> request deletion of your data</li>
+                    <li><strong>Right to object:</strong> object to the processing of your data</li>
+                    <li><strong>Right to data portability:</strong> retrieve your data in a structured, commonly used format</li>
+                    <li><strong>Right to restriction:</strong> request limitation of data processing</li>
+                </ul>
+                <p>
+                    To exercise these rights, contact me at: 
+                    <a href="mailto:contact@simonzhang.fr">contact@simonzhang.fr</a>
+                </p>
+                <p>
+                    I commit to responding to your request within a maximum of <strong>1 month</strong>.
+                </p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>7. Data Security</h2>
+                <p>
+                    Your data is protected by appropriate security measures:
+                </p>
+                <ul>
+                    <li><strong>HTTPS encryption:</strong> all communications are secured</li>
+                    <li><strong>Restricted access:</strong> only the site owner has access to the data</li>
+                    <li><strong>No sharing:</strong> no data is sold or shared with third parties</li>
+                    <li><strong>Secure hosting:</strong> servers compliant with security standards</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2>8. Data Transfer Outside the EU</h2>
+                <p>
+                    Data collected via this site is hosted within the European Union and is not 
+                    transferred to third countries.
+                </p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>9. Right to Complaint</h2>
+                <p>
+                    You have the right to file a complaint with the French Data Protection Authority (CNIL) 
+                    if you believe your rights are not being respected:
+                </p>
+                <p>
+                    <strong>CNIL</strong><br>
+                    3 Place de Fontenoy<br>
+                    TSA 80715<br>
+                    75334 Paris Cedex 07, France<br>
+                    Phone: +33 1 53 73 22 22<br>
+                    Website: <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>
+                </p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>10. Changes to This Policy</h2>
+                <p>
+                    This privacy policy may be updated occasionally to reflect changes in our practices 
+                    or for other operational, legal, or regulatory reasons.
+                </p>
+                <p>
+                    The last update date is indicated below. We encourage you to review this page regularly.
+                </p>
+            </div>
+
+            <div class="privacy-date">
+                <p><strong>Last updated:</strong> February 2026</p>
+            </div>
+
+            <a href="index_en.html" class="back-button" style="margin-top: 3rem;">
+                <i class="bx bx-arrow-back"></i>
+                Back to portfolio
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__title">Portfolio</p>
+        <p class="footer__copy">Copyright © 2025 Simon Zhang. All rights reserved.</p>
+    </footer>
+
+    <a href="#header" class="scrollup" id="scroll-up" aria-label="Back to top">
+        <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

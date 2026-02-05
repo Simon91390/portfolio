@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Simon Zhang - Portfolio Cybersécurité & Réseaux</title>
+  </head>
+
+  <body>
+    <header class="l-header" id="header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">SZ<span class="nav__logo-highlight">.</span></a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#a-propos" class="nav__link">Présentation</a></li>
+            <li class="nav__item"><a href="#parcours" class="nav__link">Parcours</a></li>
+            <li class="nav__item nav__item--dropdown">
+              <a href="#competences-transversales" class="nav__link">
+                Compétences <i class="bx bx-chevron-down"></i>
+              </a>
+              <ul class="nav__dropdown">
+                <li><a href="#competences-transversales" class="nav__dropdown-link">Gestion de Projet</a></li>
+                <li><a href="#communication" class="nav__dropdown-link">Compétences Professionnelles</a></li>
+                <li><a href="#competences-techniques" class="nav__dropdown-link">Compétences Techniques</a></li>
+              </ul>
+            </li>
+            <li class="nav__item"><a href="#projets" class="nav__link">Projets</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+        
+        <a href="index_en.html" class="nav__lang-toggle" aria-label="Switch to English">
+          <i class="bx bx-globe"></i>
+          <span>EN</span>
+        </a>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!-- ==== CYBER BANNER (gardée) ==== -->
+      <section class="cyber-banner">
+        <div class="cyber-banner__scanline"></div>
+        <div class="cyber-banner__content">
+          <div class="cyber-banner__text">
+            <span class="cyber-banner__prefix">[SYSTEM_ACCESS]</span>
+            <h1 class="cyber-banner__title">
+              <span class="cyber-banner__glitch" data-text="BIENVENUE">BIENVENUE</span>
+            </h1>
+            <div class="cyber-banner__subtitle">
+              <span class="cyber-banner__name">Simon Zhang</span>
+              <span class="cyber-banner__separator">|</span>
+              <span class="cyber-banner__role">Futur ingénieur Cybersécurité & Réseaux</span>
+            </div>
+            <div class="cyber-banner__actions">
+              <a href="assets/cv/CV_Simon_Zhang.pdf" download class="cyber-banner__button">
+                <i class="bx bx-download"></i>
+                <span>Télécharger mon CV</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cyber-banner__grid"></div>
+      </section>
+
+      <!-- ==== À PROPOS ==== -->
+      <section class="about section" id="a-propos">
+        <h2 class="section-title">Présentation</h2>
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="assets/img/perfil.jpg" alt="Image de cybersécurité" />
+          </div>
+          <div>
+            <h2 class="about__subtitle">À propos</h2>
+            <p class="about__text">
+              Étudiant en 3ème année de BUT Réseaux & Télécoms à l'Université Sorbonne Paris Nord,
+              passionné par l'informatique et la cybersécurité. L'objectif professionnel est de
+              contribuer à la protection des données et infrastructures des entreprises face aux menaces actuelles.
+            </p>
+            <p class="about__text">
+              La musique et les jeux vidéo nourrissent une créativité et une approche stratégique,
+              des atouts précieux en cybersécurité. Cette curiosité technique se traduit par une recherche constante 
+              de nouveaux défis et d'apprentissage continu.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ==== PARCOURS (FORMATIONS & EXPÉRIENCES) ==== -->
+      <section class="timeline section" id="parcours">
+        <h2 class="section-title">Parcours</h2>
+        <p class="timeline__intro">Mon cheminement académique et professionnel</p>
+        
+        <div class="timeline__container bd-grid">
+          <div class="timeline__line"></div>
+          
+          <!-- Formation Bac -->
+          <div class="timeline__item timeline__item--left">
+            <div class="timeline__marker">
+              <i class='bx bxs-book'></i>
+            </div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <h3 class="timeline__title">Baccalauréat Général</h3>
+                <span class="timeline__badge timeline__badge--completed">Obtenu</span>
+              </div>
+              <p class="timeline__subtitle">Spécialités scientifiques</p>
+              <div class="timeline__meta">
+                <span class="timeline__location">
+                  <i class='bx bxs-map'></i> Lycée Saint Louis Saint Clément
+                </span>
+                <span class="timeline__date">
+                  <i class='bx bxs-calendar'></i> 2019 - 2023
+                </span>
+              </div>
+              <p class="timeline__description">
+                Formation générale avec spécialités scientifiques, développant les bases en mathématiques, 
+                sciences et technologies numériques.
+              </p>
+            </div>
+          </div>
+
+          <!-- Formation BUT -->
+          <div class="timeline__item timeline__item--right">
+            <div class="timeline__marker">
+              <i class='bx bxs-graduation'></i>
+            </div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <h3 class="timeline__title">BUT Réseaux et Télécommunications</h3>
+                <span class="timeline__badge timeline__badge--current">En cours</span>
+              </div>
+              <p class="timeline__subtitle">Parcours Cybersécurité</p>
+              <div class="timeline__meta">
+                <span class="timeline__location">
+                  <i class='bx bxs-map'></i> Sorbonne Paris Nord
+                </span>
+                <span class="timeline__date">
+                  <i class='bx bxs-calendar'></i> 2023 - 2026
+                </span>
+              </div>
+              <p class="timeline__description">
+                Formation complète en réseaux informatiques, télécommunications et cybersécurité. 
+                Spécialisation dans les tests d'intrusion, la sécurisation des infrastructures et l'administration système.
+              </p>
+            </div>
+          </div>
+
+          <!-- Stage ICBC -->
+          <div class="timeline__item timeline__item--left">
+            <div class="timeline__marker">
+              <i class='bx bxs-briefcase-alt-2'></i>
+            </div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <h3 class="timeline__title">Stagiaire Technicien Support Informatique</h3>
+                <span class="timeline__badge timeline__badge--completed">Effectué</span>
+              </div>
+              <p class="timeline__subtitle">ICBC - Paris Branch</p>
+              <div class="timeline__meta">
+                <span class="timeline__location">
+                  <i class='bx bxs-map'></i> Paris 8e
+                </span>
+                <span class="timeline__date">
+                  <i class='bx bxs-calendar'></i> Avril - Juin 2025
+                </span>
+              </div>
+              <ul class="timeline__list">
+                <li>Support utilisateurs niveau 1 & 2 : diagnostic et résolution d'incidents matériels, systèmes et applicatifs</li>
+                <li>Installation et configuration des postes de travail (Windows, Office 365, messagerie, applications métiers)</li>
+                <li>Gestion du réseau local (LAN/Wi-Fi), suivi des droits d'accès et sécurité informatique</li>
+                <li>Mise en place de procédures de maintenance préventive et documentation technique</li>
+                <li>Accompagnement des utilisateurs sur les bonnes pratiques de cybersécurité</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Stage recherché -->
+          <div class="timeline__item timeline__item--right">
+            <div class="timeline__marker timeline__marker--search">
+              <i class='bx bxs-search-alt-2'></i>
+            </div>
+            <div class="timeline__card timeline__card--search">
+              <div class="timeline__header">
+                <h3 class="timeline__title">Stage de fin d'études</h3>
+                <span class="timeline__badge timeline__badge--search">Recherche active</span>
+              </div>
+              <p class="timeline__subtitle">Cybersécurité / Réseaux / Administration Système</p>
+              <div class="timeline__meta">
+                <span class="timeline__location">
+                  <i class='bx bxs-map'></i> Région parisienne ou remote
+                </span>
+                <span class="timeline__date">
+                  <i class='bx bxs-calendar'></i> Février - Juin 2026 (4 mois)
+                </span>
+              </div>
+              <p class="timeline__description">
+                Recherche d'un stage de fin d'études pour mettre en pratique mes compétences en cybersécurité, 
+                pentesting, administration système ou architecture réseau. Motivé et curieux d'apprendre.
+              </p>
+              <div class="timeline__cta">
+                <a href="#contact" class="timeline__button">
+                  <i class='bx bx-envelope'></i>
+                  Me contacter pour le stage
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==== GESTION DE PROJET ==== -->
+      <section class="skills section" id="competences-transversales">
+        <h2 class="section-title">Gestion de Projet</h2>
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle">Organisation & Méthodologies</h2>
+            <p class="skills__text">
+              Maîtrise des méthodologies de gestion de projet, favorisant l'organisation,
+              la collaboration et la livraison efficace des objectifs.
+            </p>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bx-git-branch skills__icon"></i>
+                <span class="skills__name">Méthodes agiles (Scrum, Kanban)</span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bx-timer skills__icon"></i>
+                <span class="skills__name">Gestion du temps & organisation</span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bx-calendar-event skills__icon"></i>
+                <span class="skills__name">Planification et priorisation</span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bx-group skills__icon"></i>
+                <span class="skills__name">Travail en équipe & collaboration</span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bx-refresh skills__icon"></i>
+                <span class="skills__name">Méthode itérative et amélioration continue</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="assets/img/gestion.jpg" alt="Gestion de projet" class="skills__img" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ==== COMPÉTENCES PROFESSIONNELLES ==== -->
+      <section class="communication section" id="communication">
+        <h2 class="section-title">Compétences Professionnelles</h2>
+        <div class="skills__container bd-grid">
+          <div>
+            <img src="assets/img/communication.jpeg" alt="Compétences professionnelles" class="skills__img" />
+          </div>
+          
+          <div>
+            <h2 class="skills__subtitle">Savoir-être & Communication</h2>
+            <p class="skills__text">
+              Compétences relationnelles et intellectuelles essentielles pour réussir
+              dans un environnement technique et collaboratif.
+            </p>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bx-message-detail skills__icon"></i>
+                <span class="skills__name">Communication technique & documentation</span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bx-brain skills__icon"></i>
+                <span class="skills__name">Résolution de problèmes complexes</span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bx-trending-up skills__icon"></i>
+                <span class="skills__name">Apprentissage continu & adaptabilité</span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bx-presentation skills__icon"></i>
+                <span class="skills__name">Présentation de projets techniques</span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bx-user-voice skills__icon"></i>
+                <span class="skills__name">Écoute active et esprit d'équipe</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+            <!-- ==== COMPÉTENCES TECHNIQUES ==== -->
+      <section class="technical-skills section" id="competences-techniques">
+        <h2 class="section-title">Compétences Techniques</h2>
+        <div class="technical-skills__intro">
+          <p class="technical-skills__text">
+            Compétences techniques acquises durant la formation BUT Réseaux & Télécoms parcours Cybersécurité
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- RÉSEAUX -->
+          <div class="skill-card" data-skill="reseaux">
+            <div class="skill-card__header">
+              <i class="bx bx-network-chart skill-card__icon"></i>
+              <h3 class="skill-card__title">Réseaux</h3>
+            </div>
+            <div class="skill-card__divider"></div>
+            <p class="skill-card__description">
+              Configuration et administration d'infrastructures réseau, maîtrise des protocoles de communication 
+              et des architectures complexes.
+            </p>
+            <ul class="skill-card__list">
+              <li><i class='bx bx-check'></i> Configuration routeurs/switchs Cisco</li>
+              <li><i class='bx bx-check'></i> Protocoles TCP/IP, VLAN, routage</li>
+              <li><i class='bx bx-check'></i> Architecture réseau multi-sites</li>
+              <li><i class='bx bx-check'></i> VPN et interconnexion sécurisée</li>
+            </ul>
+          </div>
+
+          <!-- CYBERSÉCURITÉ -->
+          <div class="skill-card" data-skill="cybersecurite">
+            <div class="skill-card__header">
+              <i class="bx bxs-shield skill-card__icon"></i>
+              <h3 class="skill-card__title">Cybersécurité</h3>
+            </div>
+            <div class="skill-card__divider"></div>
+            <p class="skill-card__description">
+              Expertise en tests d'intrusion, analyse de vulnérabilités et mise en place de solutions 
+              de sécurité défensives et offensives.
+            </p>
+            <ul class="skill-card__list">
+              <li><i class='bx bx-check'></i> Tests d'intrusion et pentesting</li>
+              <li><i class='bx bx-check'></i> Analyse de vulnérabilités</li>
+              <li><i class='bx bx-check'></i> Firewall et sécurité périmétrique</li>
+              <li><i class='bx bx-check'></i> SIEM et monitoring sécurité</li>
+            </ul>
+          </div>
+
+          <!-- ADMINISTRATION SYSTÈME -->
+          <div class="skill-card" data-skill="admin-systeme">
+            <div class="skill-card__header">
+              <i class="bx bxs-server skill-card__icon"></i>
+              <h3 class="skill-card__title">Administration Système</h3>
+            </div>
+            <div class="skill-card__divider"></div>
+            <p class="skill-card__description">
+              Gestion et administration de serveurs Linux et Windows, virtualisation et automatisation 
+              via scripting.
+            </p>
+            <ul class="skill-card__list">
+              <li><i class='bx bx-check'></i> Linux/Windows Server</li>
+              <li><i class='bx bx-check'></i> Virtualisation (VMware, VirtualBox)</li>
+              <li><i class='bx bx-check'></i> Scripting Bash/PowerShell</li>
+              <li><i class='bx bx-check'></i> Active Directory et gestion utilisateurs</li>
+            </ul>
+          </div>
+
+          <!-- PROGRAMMATION -->
+          <div class="skill-card" data-skill="programmation">
+            <div class="skill-card__header">
+              <i class="bx bx-code-alt skill-card__icon"></i>
+              <h3 class="skill-card__title">Programmation</h3>
+            </div>
+            <div class="skill-card__divider"></div>
+            <p class="skill-card__description">
+              Développement de scripts et programmes pour l'automatisation réseau et le traitement de données.
+            </p>
+            <ul class="skill-card__list">
+              <li><i class='bx bx-check'></i> Python (scripting, automatisation)</li>
+              <li><i class='bx bx-check'></i> SQL et bases de données</li>
+              <li><i class='bx bx-check'></i> Scripts d'automatisation réseau</li>
+              <li><i class='bx bx-check'></i> Git et versioning de code</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+<!-- ==== PROJETS ==== -->
+      <section class="work section" id="projets">
+        <h2 class="section-title">Projets réalisés</h2>
+        <div class="projects-intro">
+          <p class="projects-intro__text">
+            Ensemble de projets académiques et techniques réalisés dans le cadre de la formation BUT Réseaux & Télécoms, 
+            couvrant la cybersécurité, l'administration système, les réseaux et la programmation.
+          </p>
+        </div>
+
+        <div class="work__grid">
+          <!-- Projet 1: Pentest -->
+          <a href="assets/projets/projet_pentest.pdf" target="_blank" class="work__card work__card-link">
+            <div class="work__card-header">
+              <i class="bx bxs-bug-alt work__icon"></i>
+              <div class="work__tags">
+                <span class="work__tag work__tag--cyber">Cybersécurité</span>
+                <span class="work__tag work__tag--network">Réseaux</span>
+              </div>
+            </div>
+            <h3 class="work__card-title">Tests d'intrusion avec Nessus & Metasploit</h3>
+            <p class="work__card-description">
+              Analyse de vulnérabilités et exploitation de failles sur Windows XP et Metasploitable. 
+              Exploitation de MS08-067, EternalBlue et attaques VNC.
+            </p>
+            <div class="work__footer">
+              <span class="work__tech">Kali Linux • Nessus • Metasploit • VirtualBox</span>
+            </div>
+            <div class="work__card-cta">
+              <i class="bx bx-file-blank"></i>
+              <span>Ouvrir le PDF</span>
+              <i class="bx bx-chevron-right"></i>
+            </div>
+          </a>
+
+          <!-- Projet 2: Firewall -->
+          <a href="assets/projets/projet_firewall.pdf" target="_blank" class="work__card work__card-link">
+            <div class="work__card-header">
+              <i class="bx bxs-shield-alt-2 work__icon"></i>
+              <div class="work__tags">
+                <span class="work__tag work__tag--network">Réseaux</span>
+                <span class="work__tag work__tag--admin">Administration</span>
+              </div>
+            </div>
+            <h3 class="work__card-title">Sécurisation périmétrique avec iptables</h3>
+            <p class="work__card-description">
+              Configuration d'un routeur-pare-feu Linux avec iptables et simulation d'attaque ARP Spoofing. 
+              Filtrage de paquets et NAT/Masquerade.
+            </p>
+            <div class="work__footer">
+              <span class="work__tech">Linux • iptables • Marionnet • MI-LXC</span>
+            </div>
+            <div class="work__card-cta">
+              <i class="bx bx-file-blank"></i>
+              <span>Ouvrir le PDF</span>
+              <i class="bx bx-chevron-right"></i>
+            </div>
+          </a>
+
+          <!-- Projet 3: PSSI -->
+          <a href="assets/projets/projet_pssi.pdf" target="_blank" class="work__card work__card-link">
+            <div class="work__card-header">
+              <i class="bx bxs-file-doc work__icon"></i>
+              <div class="work__tags">
+                <span class="work__tag work__tag--cyber">Cybersécurité</span>
+                <span class="work__tag work__tag--management">Gestion</span>
+              </div>
+            </div>
+            <h3 class="work__card-title">Politique de Sécurité des SI (PSSI)</h3>
+            <p class="work__card-description">
+              Rédaction d'une PSSI complète et d'une procédure de patching pour l'entreprise fictive TechInnov Solutions.
+            </p>
+            <div class="work__footer">
+              <span class="work__tech">Gouvernance • PSSI • Patch Management</span>
+            </div>
+            <div class="work__card-cta">
+              <i class="bx bx-file-blank"></i>
+              <span>Ouvrir le PDF</span>
+              <i class="bx bx-chevron-right"></i>
+            </div>
+          </a>
+
+          <!-- Projet 4: Émetteur Talkie-Walkie -->
+          <a href="assets/projets/projet_talkiewalkie.pdf" target="_blank" class="work__card work__card-link">
+            <div class="work__card-header">
+              <i class="bx bx-radio work__icon"></i>
+              <div class="work__tags">
+                <span class="work__tag work__tag--network">Réseaux</span>
+                <span class="work__tag work__tag--signal">Signal</span>
+              </div>
+            </div>
+            <h3 class="work__card-title">Émetteur radio FM - Talkie-Walkie</h3>
+            <p class="work__card-description">
+              Conception et réalisation d'un émetteur de talkie-walkie avec modulation FM et double transposition de fréquence.
+            </p>
+            <div class="work__footer">
+              <span class="work__tech">RF • Modulation FM • Analyseur de spectre</span>
+            </div>
+            <div class="work__card-cta">
+              <i class="bx bx-file-blank"></i>
+              <span>Ouvrir le PDF</span>
+              <i class="bx bx-chevron-right"></i>
+            </div>
+          </a>
+
+          <!-- Projet 5: Hygiène Informatique -->
+          <a href="assets/projets/SAE  Hygiène informatique.mp4" target="_blank" class="work__card work__card-link">
+            <div class="work__card-header">
+              <i class="bx bxs-lock-alt work__icon"></i>
+              <div class="work__tags">
+                <span class="work__tag work__tag--cyber">Cybersécurité</span>
+                <span class="work__tag work__tag--awareness">Sensibilisation</span>
+              </div>
+            </div>
+            <h3 class="work__card-title">Sensibilisation - Hygiène Informatique</h3>
+            <p class="work__card-description">
+              Vidéo de sensibilisation aux bonnes pratiques de sécurité informatique et d'hygiène numérique pour les utilisateurs.
+            </p>
+            <div class="work__footer">
+              <span class="work__tech">Sensibilisation • Communication • Sécurité</span>
+            </div>
+            <div class="work__card-cta">
+              <i class="bx bx-play-circle"></i>
+              <span>Voir la vidéo</span>
+              <i class="bx bx-chevron-right"></i>
+            </div>
+          </a>
+
+          <!-- Projet 6: Architecture Réseau -->
+          <a href="assets/projets/projet_architecture.pdf" target="_blank" class="work__card work__card-link">
+            <div class="work__card-header">
+              <i class="bx bx-network-chart work__icon"></i>
+              <div class="work__tags">
+                <span class="work__tag work__tag--network">Réseaux</span>
+                <span class="work__tag work__tag--design">Architecture</span>
+              </div>
+            </div>
+            <h3 class="work__card-title">Architecture réseau multi-sites sécurisée</h3>
+            <p class="work__card-description">
+              Conception d'une infrastructure réseau complète avec segmentation VLAN, routage et sécurisation des flux.
+            </p>
+            <div class="work__footer">
+              <span class="work__tech">Cisco • VLAN • VPN • Routage</span>
+            </div>
+            <div class="work__card-cta">
+              <i class="bx bx-file-blank"></i>
+              <span>Ouvrir le PDF</span>
+              <i class="bx bx-chevron-right"></i>
+            </div>
+          </a>
+        </div>
+      </section>
+
+
+
+      <!-- ===== FORMULAIRE DE CONTACT ===== -->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+          <form action="" class="contact__form" id="contactForm">
+            <div class="contact__inputs">
+              <input 
+                type="text" 
+                placeholder="Nom *" 
+                class="contact__input" 
+                name="name"
+                required
+              />
+              <input 
+                type="email" 
+                placeholder="Email *" 
+                class="contact__input" 
+                name="email"
+                required
+              />
+            </div>
+            <textarea 
+              placeholder="Votre message *" 
+              class="contact__input contact__textarea" 
+              name="message"
+              rows="8"
+              required
+            ></textarea>
+
+            <!-- RGPD Consent -->
+            <div class="contact__consent">
+              <label class="consent-checkbox">
+                <input 
+                  type="checkbox" 
+                  name="rgpd_consent" 
+                  id="rgpdConsent"
+                  required
+                />
+                <span class="consent-checkbox__checkmark"></span>
+                <span class="consent-checkbox__text">
+                  J'accepte que mes données personnelles soient collectées et utilisées 
+                  pour répondre à ma demande de contact. *
+                  <a href="politique-confidentialite.html" class="consent-checkbox__link">
+                    Politique de confidentialité
+                  </a>
+                </span>
+              </label>
+            </div>
+
+            <button type="submit" class="contact__button">
+              <i class='bx bx-send'></i> Envoyer le message
+            </button>
+          </form>
+
+          <!-- Message de confirmation -->
+          <div class="contact__message" id="contactMessage" style="display: none;">
+            <i class='bx bx-check-circle'></i>
+            <p>Message envoyé avec succès !</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p class="footer__title">Portfolio</p>
+      <p class="footer__copy">Copyright © 2025 Simon Zhang. Tous droits réservés.</p>
+    </footer>
+
+    <a href="#header" class="scrollup" id="scroll-up" aria-label="Retour en haut de page">
+      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+  
+    <!-- ===== BANNIÈRE COOKIES RGPD ===== -->
+    <div class="cookie-banner" id="cookieBanner">
+      <div class="cookie-banner__content">
+        <div class="cookie-banner__text">
+          <h3 class="cookie-banner__title">🍪 Cookies & Confidentialité</h3>
+          <p class="cookie-banner__description">
+            Ce site n'utilise aucun cookie de tracking ou publicitaire. 
+            Seuls des cookies techniques essentiels au fonctionnement du site sont utilisés (préférences d'affichage).
+            <a href="politique-confidentialite.html" class="cookie-banner__link">En savoir plus</a>
+          </p>
+        </div>
+        <div class="cookie-banner__actions">
+          <button class="cookie-banner__button cookie-banner__button--accept" id="acceptCookies">
+            J'ai compris
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
